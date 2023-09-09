@@ -1,0 +1,64 @@
+/* Welcome section */
+
+.welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main-dark);
+}
+
+.welcome-section h1,
+.welcome-section p {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.welcome-section h1 {
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.welcome-section .job-title {
+  margin-top: 1rem;
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
+  color: var(--main-white);
+  animation: fadeIn 1.5s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.welcome-section .skills {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 150;
+  color: var(--main-white);
+  overflow: hidden; 
+  text-align: center;
+  white-space: nowrap;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards, typingText 6s steps(40) forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes typingText {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
