@@ -1,8 +1,10 @@
-<nav id="navbar" class="nav">
+<nav id="navbar" class="nav" role="navigation" aria-label="Main navigation">
   <ul class="nav-list">
-    <li><a href="#welcome-section">About</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#welcome-section"><i class="top-button fa-solid fa-angles-up"></i></a></li>
+    <li><a routerLink="/welcome-section" aria-label="About section">About</a></li>
+    <li><a routerLink="/projects" aria-label="Projects section">Projects</a></li>
+    <li><a routerLink="/contact" aria-label="Contact section">Contact</a></li>
+    <li><a routerLink="/welcome-section" aria-label="Back to top">
+      <i class="top-button fa-solid fa-angles-up"></i>
+    </a></li>
   </ul>
 </nav>
