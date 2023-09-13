@@ -1,3 +1,13 @@
+@font-base: 'Poppins', sans-serif;
+@font-headers: 'Raleway', sans-serif;
+
+// Define a simple mixin for media queries
+.breakpoint(@point) {
+  @media (max-width: @point) {
+    font-size: 60%;
+  }
+}
+
 /* Custom properties/variables  */
 :root {
   --main-white: #F7E9E3;
@@ -31,30 +41,18 @@ html {
 }
 
 /* 1200px / 16px = 75em */
-@media (max-width: 75em) {
-  html {
-    font-size: 60%;
-  }
-}
+.breakpoint(75em); 
 
 /* 980px / 16px = 61.25em */
-@media (max-width: 61.25em) {
-  html {
-    font-size: 58%;
-  }
-}
+.breakpoint(61.25em);
 
 /* 460px / 16px = 28.75em */
-@media (max-width: 28.75em) {
-  html {
-    font-size: 55%;
-  }
-}
+.breakpoint(28.75em);
 
 /* Base styles */
 body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem; /* 18px */
+  font-family: @font-base;
+  font-size: 1.8rem; 
   font-weight: 400;
   line-height: 1.4;
   color: var(--main-white);
@@ -62,7 +60,7 @@ body {
 
 h1,
 h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: @font-headers;
   font-weight: 700;
   text-align: center;
 }
