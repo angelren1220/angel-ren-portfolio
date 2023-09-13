@@ -1,0 +1,28 @@
+.top-button {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  background-color: var(--main-light);
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  color: var(--main-dark);
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000;
+	animation: float 2s infinite ease;
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(0.5rem);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}

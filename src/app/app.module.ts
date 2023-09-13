@@ -8,6 +8,8 @@ import { WelcomeSectionComponent } from './welcome-section/welcome-section.compo
 import { ProjectsSectionComponent } from './projects-section/projects-section.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
 import { FooterComponent } from './footer/footer.component';
+import { TopButtonComponent } from './top-button/top-button.component';
+
 
 @NgModule({
   declarations: [
@@ -16,11 +18,12 @@ import { FooterComponent } from './footer/footer.component';
     WelcomeSectionComponent,
     ProjectsSectionComponent,
     ContactSectionComponent,
-    FooterComponent
+    FooterComponent,
+    TopButtonComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
