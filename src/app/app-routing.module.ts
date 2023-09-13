@@ -6,6 +6,7 @@ import { ProjectsSectionComponent } from './projects-section/projects-section.co
 import { ContactSectionComponent } from './contact-section/contact-section.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: 'welcome-section', pathMatch: 'full' },
   { path: 'welcome-section', component: WelcomeSectionComponent },
   { path: 'projects', component: ProjectsSectionComponent },
   { path: 'contact', component: ContactSectionComponent }
