@@ -1,9 +1,5 @@
 <section id="welcome-section" class="welcome-section">
   <h1>Hey, I am Angel Ren.</h1>
   <p class="job-title">A detail-oriented and passionate full-stack web developer.</p>
-  <span class="skills">Java | JavaScript | Ruby | HTML | CSS | Python</span>
-  <span class="skills">NodeJS | ReactJS | Vue | Ajax | Express | jQuery | Bootstrap | Rails |
-    SASS</span>
-  <span class="skills">Storybook, Cypress, RSpec, Jest, Mocha, Chai</span>
-  <span class="skills">SQL, PostgreSQL</span>
+  <span class="skills" *ngFor="let skillSet of skillSets">{{ skillSet }}</span>
 </section>
