@@ -8,8 +8,15 @@ import { Component } from '@angular/core';
 export class ProjectsSectionComponent {
   projects = [
     {
+      title: 'Weather App',
+      description: '🚧 This Angular-powered weather application provides users with an intuitive interface to view both current weather conditions and a 3-day forecast.',
+      imageSrc: 'https://github.com/angelren1220/WeatherApp/blob/main/screenshots/Screenshot1.png?raw=true',
+      projectLink: 'https://github.com/angelren1220/WeatherApp',
+    },
+
+    {
       title: 'ChartFolio',
-      description: 'ChartFolio is an interactive visualization tool that allows users to explore data through three distinct chart types: Bar Chart, Choropleth Map Chart, Heat Map Chart.',
+      description: '🚧 ChartFolio is an interactive visualization tool that allows users to explore data through three distinct chart types: Bar Chart, Choropleth Map Chart, Heat Map Chart.',
       imageSrc: 'https://github.com/angelren1220/chart-folio/blob/main/docs/choropleth%20map.png?raw=true',
       projectLink: 'https://github.com/angelren1220/chart-folio',
     },
