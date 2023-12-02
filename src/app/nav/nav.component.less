@@ -1,5 +1,4 @@
 /* nav */
-
 .nav {
   display: flex;
   justify-content: flex-end;
@@ -10,31 +9,29 @@
   background: var(--main-light);
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   z-index: 10;
-}
-
-.nav-list {
-  display: flex;
-  margin-right: 2rem;
-}
-
-@media (max-width: 28.75em) {
-  .nav {
-    justify-content: center;
-  }
 
   .nav-list {
-    margin: 0 1rem;
+    display: flex;
+    margin-right: 2rem;
+
+    a {
+      display: block;
+      font-size: 2.2rem;
+      padding: 2rem;
+      color: var(--main-dark);
+
+      &:hover {
+        background: var(--main-blue);
+        color: var(--main-white);
+      }
+    }
   }
-}
 
-.nav-list a {
-  display: block;
-  font-size: 2.2rem;
-  padding: 2rem;
-  color: var(--main-dark);
-}
+  @media (max-width: 28.75em) {
+    justify-content: center;
 
-.nav-list a:hover {
-  background: var(--main-blue);
-  color: var(--main-white);
+    .nav-list {
+      margin: 0 1rem;
+    }
+  }
 }
