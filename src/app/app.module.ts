@@ -9,6 +9,7 @@ import { ProjectsSectionComponent } from './projects-section/projects-section.co
 import { ContactSectionComponent } from './contact-section/contact-section.component';
 import { FooterComponent } from './footer/footer.component';
 import { TopButtonComponent } from './top-button/top-button.component';
+import { MainComponent } from './main/main.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { TopButtonComponent } from './top-button/top-button.component';
     ProjectsSectionComponent,
     ContactSectionComponent,
     FooterComponent,
-    TopButtonComponent
+    TopButtonComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
