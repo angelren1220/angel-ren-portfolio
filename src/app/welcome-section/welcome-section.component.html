@@ -2,5 +2,9 @@
   <h1>Hey, I am Angel Ren.</h1>
   <img [src]="imageLink" alt="Angel Ren" class="profile-photo">
   <p class="job-title">A detail-oriented and passionate full-stack web developer.</p>
-  <span class="skills" *ngFor="let skillSet of skillSets">{{ skillSet }}</span>
+  
+  <!-- Typing Effect for Each Skill Set -->
+  <div class="skills" *ngFor="let skillSet of skillSets">
+    <span class="text-container">{{ skillSet }}</span><span class="cursor">|</span>
+  </div>
 </section>

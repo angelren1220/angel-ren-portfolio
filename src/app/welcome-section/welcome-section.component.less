@@ -29,17 +29,28 @@
   }
 
   .skills {
-    margin-top: 1rem;
     font-size: 2rem;
     font-weight: 150;
     color: var(--main-white);
-    overflow: hidden; 
-    text-align: center;
+    overflow: hidden;
     white-space: nowrap;
-    opacity: 0;
-    animation: fadeIn 0.5s forwards, typingText 6s steps(40) forwards;
-    animation-delay: 1.5s;
+    text-align: left;
+    position: relative;
   }
+  
+  .text-container {
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: top;
+    animation: typingText 6s steps(40) forwards;
+  }
+  
+  .cursor {
+    display: inline-block;
+    vertical-align: top;
+    animation: blinkCursor 0.5s step-end infinite;
+  }
+  
 }
 
 .profile-photo {
@@ -51,14 +62,6 @@
   object-fit: cover;
 }
 
-@keyframes typingText {
-  from {
-    width: 0;
-  }
-  to {
-    width: 80%;
-  }
-}
 
 @keyframes fadeIn {
   0% {
@@ -69,4 +72,15 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+  
+@keyframes typingText {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blinkCursor {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
 }
